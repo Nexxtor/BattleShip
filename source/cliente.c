@@ -44,9 +44,9 @@ int main(int argc, char **argv){
 	struct msqid_ds buf; //informacion sobre la cola
 	int oponente, turno;
 
-	
+			
 	//Crear un llave en el la ruta actual 
-	llave = ftok("/tmp",300000); 
+	llave = ftok("/tmp",120); 
 	
 	crearCola();
 	mensaje.tipo = ESTOY_LISTO + getpid(); //Para saber quien es
